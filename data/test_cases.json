@@ -1,0 +1,502 @@
+[
+  {
+    "disease_id": "RMD1311",
+    "ground_truth": "Frasier syndrome",
+    "query": "Adolescent, Adult, Childhood patient with focal segmental glomerulosclerosis, primary amenorrhea, hypergonadotropic hypogonadism, gonadal dysgenesis with female appearance, male, proteinuria, increased circulating gonadotropin level"
+  },
+  {
+    "disease_id": "RMD0230",
+    "ground_truth": "Rabies",
+    "query": "Patient with depression, hallucinations, anxiety, fever, elevated wbc count, elevated creatine kinase"
+  },
+  {
+    "disease_id": "RMD0052",
+    "ground_truth": "Alpha-1-antitrypsin deficiency",
+    "query": "Patient with emphysema, bronchiectasis, reduced circulating alpha-1-antitrypsin concentration, jaundice, elevated circulating hepatic transaminase concentration, neonatal unconjugated hyperbilirubinemia"
+  },
+  {
+    "disease_id": "RMD0565",
+    "ground_truth": "Severe oculo-renal-cerebellar syndrome",
+    "query": "Infancy patient with joint hypermobility, renal insufficiency, strabismus, optic atrophy, proteinuria, abnormality of retinal pigmentation"
+  },
+  {
+    "disease_id": "RMD0503",
+    "ground_truth": "Multifocal infantile hemangioma with extracutenous involvement",
+    "query": "Neonatal patient with renal insufficiency, ascites, polyhydramnios, premature birth, abnormality of the vagina, abnormal skull morphology"
+  },
+  {
+    "disease_id": "RMD0459",
+    "ground_truth": "Acrocardiofacial syndrome",
+    "query": "Antenatal, Neonatal patient with low-set ears, split hand, intellectual disability, feeding difficulties in infancy, delayed bone age, skeletal dysplasia"
+  },
+  {
+    "disease_id": "RMD0287",
+    "ground_truth": "Epilepsy-telangiectasia syndrome",
+    "query": "Childhood patient with long philtrum, anteverted nares, conjunctival telangiectasia, intellectual disability, abnormality of the dentition, decreased circulating iga level"
+  },
+  {
+    "disease_id": "RMD0211",
+    "ground_truth": "Polymyositis",
+    "query": "Adult, Elderly patient with hypotonia, arthralgia, autoimmunity, proximal muscle weakness, elevated circulating creatine kinase concentration, emg abnormality"
+  },
+  {
+    "disease_id": "RMD1388",
+    "ground_truth": "Emanuel syndrome",
+    "query": "Antenatal, Neonatal patient with global developmental delay, cryptorchidism, micropenis, hypogonadism, epimutation of 15q11-q13 region, increased 15q11-q13 homod deletion"
+  },
+  {
+    "disease_id": "RMD1118",
+    "ground_truth": "Chylomicron retention disease",
+    "query": "Childhood, Infancy patient with retinopathy, steatorrhea, fat malabsorption, failure to thrive, elevated circulating hepatic transaminase concentration, increased hepatocellular lipid droplets"
+  },
+  {
+    "disease_id": "RMD0179",
+    "ground_truth": "Proteus syndrome",
+    "query": "Infancy patient with capillary hemangioma, irregular hyperpigmentation, epidermal nevus, lipoma, abnormal subcutaneous fat tissue distribution, vascular skin abnormality"
+  },
+  {
+    "disease_id": "RMD1211",
+    "ground_truth": "Deficiency in anterior pituitary function-variable immunodeficiency syndrome",
+    "query": "Childhood patient with recurrent otitis media, hypoglycemic coma, hypotension, recurrent upper respiratory tract infections, recurrent hypoglycemia, hyponatremia"
+  },
+  {
+    "disease_id": "RMD0866",
+    "ground_truth": "Griscelli syndrome type 1",
+    "query": "Childhood, Infancy patient with retinopathy, nystagmus, diplopia, intellectual disability, * low pdcd1 gene expression, * decreased rab27a protein expression"
+  },
+  {
+    "disease_id": "RMD0066",
+    "ground_truth": "Cowden syndrome",
+    "query": "Patient with macroglossia, furrowed tongue, macrocephaly, goiter, abnormality of the penis, abnormality of the thyroid gland"
+  },
+  {
+    "disease_id": "RMD0062",
+    "ground_truth": "Waardenburg syndrome type 3",
+    "query": "Neonatal patient with microcephaly, hearing impairment, narrow nasal bridge, downslanted palpebral fissures, abnormality of the face, abnormality of finger"
+  },
+  {
+    "disease_id": "RMD0192",
+    "ground_truth": "Waardenburg syndrome",
+    "query": "Infancy, Neonatal patient with hearing impairment, prominent nasal bridge, synophrys, hypopigmented skin patches, abnormality of skin pigmentation, abnormal facial shape"
+  },
+  {
+    "disease_id": "RMD0449",
+    "ground_truth": "Transcobalamin deficiency",
+    "query": "Infancy, Neonatal patient with lymphopenia, acute kidney injury, megaloblastic bone marrow, thrombocytopenia, decreased total neutrophil count"
+  },
+  {
+    "disease_id": "RMD0478",
+    "ground_truth": "Fetal cytomegalovirus syndrome",
+    "query": "Antenatal, Neonatal patient with sensorineural hearing impairment, intellectual disability, splenomegaly, hepatomegaly, thrombocytopenia, anemia"
+  },
+  {
+    "disease_id": "RMD1036",
+    "ground_truth": "46,XY difference of sex development-adrenal insufficiency due to CYP11A1 deficiency",
+    "query": "Infancy, Neonatal patient with cryptorchidism, ambiguous genitalia, male, male pseudohermaphroditism, renal salt wasting, decreased fertility, increased circulating renin level"
+  },
+  {
+    "disease_id": "RMD1234",
+    "ground_truth": "Vulvovaginal gingival syndrome",
+    "query": "Adult patient with oral ulcer, pruritus, parakeratosis, erythema, abnormality of female external genitalia, abnormality of tumor necrosis factor secretion"
+  },
+  {
+    "disease_id": "RMD0055",
+    "ground_truth": "Diastrophic dysplasia",
+    "query": "Antenatal, Neonatal patient with macrocephaly, intrauterine growth retardation, scoliosis, micromelia, abnormal rib morphology, abnormality of the clavicle"
+  },
+  {
+    "disease_id": "RMD1151",
+    "ground_truth": "Multiple myeloma",
+    "query": "Adult patient with osteopenia, pathologic fracture, nephrotic syndrome, nephropathy, anemia"
+  },
+  {
+    "disease_id": "RMD0409",
+    "ground_truth": "Crisponi syndrome",
+    "query": "Neonatal patient with high palate, full cheeks, long philtrum, wide nose, increased igf1 levels, macrocytosis"
+  },
+  {
+    "disease_id": "RMD1469",
+    "ground_truth": "IVIC syndrome",
+    "query": "Antenatal, Neonatal patient with hearing impairment, strabismus, joint stiffness, hypoplasia of the radius, abnormal dermatoglyphics"
+  },
+  {
+    "disease_id": "RMD1332",
+    "ground_truth": "Sarcoidosis",
+    "query": "Adolescent, Adult, Childhood, Elderly patient with uveitis, joint swelling, weight loss, fever, decreased liver function, thrombocytopenia"
+  },
+  {
+    "disease_id": "RMD1439",
+    "ground_truth": "Nasopalpebral lipoma-coloboma syndrome",
+    "query": "Neonatal patient with cataract, microphthalmia, exotropia, recurrent upper respiratory tract infections, abnormal eyelash morphology"
+  },
+  {
+    "disease_id": "RMD0861",
+    "ground_truth": "BRESEK syndrome",
+    "query": "Childhood patient with cryptorchidism, vesicoureteral reflux, renal hypoplasia, renal dysplasia, i couldn't find any information on breastek syndrome."
+  },
+  {
+    "disease_id": "RMD0453",
+    "ground_truth": "Dermatoosteolysis, Kirghizian type",
+    "query": "Infancy patient with keratitis, nyctalopia, oligodontia, brachydactyly, abnormal diaphysis morphology, abnormal metaphysis morphology"
+  },
+  {
+    "disease_id": "RMD0921",
+    "ground_truth": "Primary familial polycythemia",
+    "query": "Patient with epistaxis, pruritus, polycythemia, abdominal pain, abnormal hemoglobin"
+  },
+  {
+    "disease_id": "RMD1208",
+    "ground_truth": "Chondroectodermal dysplasia with night blindness",
+    "query": "Infancy, Neonatal patient with micrognathia, otitis media, platyspondyly, delayed skeletal maturation, osteopenia, increased alkaline phosphatase"
+  },
+  {
+    "disease_id": "RMD0571",
+    "ground_truth": "Autosomal recessive malignant osteopetrosis",
+    "query": "Infancy, Neonatal patient with hydrocephalus, macrocephaly, hearing impairment, otitis media, abnormality of visual evoked potentials, abnormal rib morphology"
+  },
+  {
+    "disease_id": "RMD0014",
+    "ground_truth": "Mucopolysaccharidosis type 7",
+    "query": "Adolescent, Antenatal, Childhood, Infancy, Neonatal patient with inguinal hernia, coarse facial features, lymphedema, intellectual disability, elevated urine glycosaminoglycan, reduced alpha-glucosaminidase enzyme activity"
+  },
+  {
+    "disease_id": "RMD0328",
+    "ground_truth": "Acromesomelic dysplasia, Hunter-Thompson type",
+    "query": "Antenatal, Neonatal patient with brachydactyly, joint stiffness, scoliosis, hip dislocation, abnormality of speech or vocalization, abnormality of pelvic girdle bone morphology"
+  },
+  {
+    "disease_id": "RMD1432",
+    "ground_truth": "Renpenning syndrome",
+    "query": "Infancy, Neonatal patient with microcephaly, intellectual disability, skeletal muscle atrophy, severe short stature, trisomy 9 mosaicism, abnormal serum alkaline phosphatase levels"
+  },
+  {
+    "disease_id": "RMD0867",
+    "ground_truth": "LUMBAR syndrome",
+    "query": "Infancy, Neonatal patient with cryptorchidism, bifid scrotum, hypoplastic labia majora, ambiguous genitalia, i'm unsure of any specific lab findings for lumbard syndrome due to its rarity and absence in medical literature., however, i can suggest possible urinary tract issues due to renal duplication and vesicoureteral reflux:"
+  },
+  {
+    "disease_id": "RMD0698",
+    "ground_truth": "Adult-onset Still disease",
+    "query": "Adult, Elderly patient with skin rash, pruritus, arthritis, joint swelling, increased circulating ferritin concentration, elevated erythrocyte sedimentation rate"
+  },
+  {
+    "disease_id": "RMD0320",
+    "ground_truth": "Acrodysostosis",
+    "query": "Antenatal, Neonatal patient with open mouth, hypoplasia of the maxilla, wide nasal bridge, depressed nasal ridge, abnormality of the nail, abnormal form of the vertebral bodies"
+  },
+  {
+    "disease_id": "RMD0442",
+    "ground_truth": "Acrofacial dysostosis, Catania type",
+    "query": "Antenatal, Neonatal patient with microcephaly, microretrognathia, smooth philtrum, high forehead, abnormality of the dentition, abnormal palate morphology"
+  },
+  {
+    "disease_id": "RMD0691",
+    "ground_truth": "Cleft lip/palate-ectodermal dysplasia syndrome",
+    "query": "Infancy, Neonatal patient with small scrotum, hypogonadism, cleft upper lip, micrognathia, abnormality of the dentition"
+  },
+  {
+    "disease_id": "RMD0190",
+    "ground_truth": "Gaucher disease",
+    "query": "Patient with splenomegaly, hepatomegaly, fatigue, strabismus, anemia, decreased beta-glucocerebrosidase level"
+  },
+  {
+    "disease_id": "RMD0780",
+    "ground_truth": "Reticular dysgenesis",
+    "query": "Infancy, Neonatal patient with hearing impairment, chronic otitis media, failure to thrive, weight loss, abnormality of neutrophils, leukopenia"
+  },
+  {
+    "disease_id": "RMD0199",
+    "ground_truth": "Weaver syndrome",
+    "query": "Antenatal, Neonatal patient with accelerated skeletal maturation, inguinal hernia, round face, large hands, abnormally low-pitched voice"
+  },
+  {
+    "disease_id": "RMD0737",
+    "ground_truth": "Rhizomelic chondrodysplasia punctata",
+    "query": "Antenatal, Neonatal patient with microcephaly, epicanthus, cataract, dry skin, abnormality of the dentition, abnormal metaphysis morphology"
+  },
+  {
+    "disease_id": "RMD0706",
+    "ground_truth": "Vascular Ehlers-Danlos syndrome",
+    "query": "Infancy, Neonatal patient with bladder diverticulum, cryptorchidism, epicanthus, hypertelorism, abnormal oral frenulum morphology, abnormality of the face"
+  },
+  {
+    "disease_id": "RMD1238",
+    "ground_truth": "Acquired generalized lipodystrophy",
+    "query": "Patient with hyperinsulinemia, insulin resistance, insulin-resistant diabetes mellitus, hepatic steatosis, abnormal circulating lipid concentration, abnormality of cardiovascular system physiology"
+  },
+  {
+    "disease_id": "RMD0543",
+    "ground_truth": "Familial partial lipodystrophy, Dunnigan type",
+    "query": "Adolescent, Adult, Childhood, Elderly patient with round face, diabetes mellitus, insulin resistance, secondary amenorrhea, abnormality of the nail, hypertriglyceridemia"
+  },
+  {
+    "disease_id": "RMD0089",
+    "ground_truth": "Distal deletion 9p syndrome",
+    "query": "Infancy, Neonatal patient with posteriorly rotated ears, short nose, microtia, midface retrusion, abnormality of the antihelix, abnormality of the dentition"
+  },
+  {
+    "disease_id": "RMD1497",
+    "ground_truth": "Wiedemann-Rautenstrauch syndrome",
+    "query": "Antenatal, Neonatal patient with low-set ears, recurrent otitis media, cataract, hypermetropia, abnormality of the ear, decreased response to growth hormone stimulation test"
+  },
+  {
+    "disease_id": "RMD0942",
+    "ground_truth": "X-linked Charcot-Marie-Tooth disease type 4",
+    "query": "Childhood, Infancy, Neonatal patient with hearing impairment, sensory neuropathy, intellectual disability, areflexia, decreased nerve conduction velocity"
+  },
+  {
+    "disease_id": "RMD1100",
+    "ground_truth": "1q21.1 microdeletion syndrome",
+    "query": "Infancy, Neonatal patient with high palate, microcephaly, epicanthus, long philtrum, * increased alpha 1 antitrypsin, * low imipramine binding ratio of alpha 1 antitrypsin"
+  },
+  {
+    "disease_id": "RMD0257",
+    "ground_truth": "Xp22.3 microdeletion syndrome",
+    "query": "Neonatal patient with hypogonadotropic hypogonadism, polycystic ovaries, myopia, secondary amenorrhea, decreased fertility, abnormality of chromosome segregation"
+  },
+  {
+    "disease_id": "RMD0777",
+    "ground_truth": "Muscle-eye-brain disease",
+    "query": "Antenatal, Infancy, Neonatal patient with hydrocephalus, strabismus, glaucoma, visual impairment, elevated intracranial pressure, microcephaly"
+  },
+  {
+    "disease_id": "RMD0162",
+    "ground_truth": "Joubert syndrome with oculorenal defect",
+    "query": "Infancy, Neonatal patient with nephropathy, retinal dystrophy, intellectual disability, ataxia, molar tooth sign on mri"
+  },
+  {
+    "disease_id": "RMD1132",
+    "ground_truth": "X-linked microcephaly-growth retardation-prognathism-cryptorchidism syndrome",
+    "query": "Antenatal, Neonatal patient with thin upper lip vermilion, hypospadias, sensorineural hearing impairment, protruding ear, macroorchidism after puberty, increased follicle-stimulating hormone (fsh)"
+  },
+  {
+    "disease_id": "RMD0602",
+    "ground_truth": "Microcephaly-deafness-intellectual disability syndrome",
+    "query": "Infancy, Neonatal patient with everted lower lip vermilion, microcephaly, epicanthus, facial asymmetry, abnormal palate morphology"
+  },
+  {
+    "disease_id": "RMD1289",
+    "ground_truth": "Ichthyosis follicularis-alopecia-photophobia syndrome",
+    "query": "Infancy, Neonatal patient with photophobia, intellectual disability, seizure, specific learning disability, abnormality of the hair, abnormal eyelash morphology"
+  },
+  {
+    "disease_id": "RMD1268",
+    "ground_truth": "Radiation proctitis",
+    "query": "Adult patient with colitis, rectal abscess, rectal fistula, constipation, abnormality of the rectum, abnormality of the vasculature"
+  },
+  {
+    "disease_id": "RMD0742",
+    "ground_truth": "Infantile myofibromatosis",
+    "query": "Antenatal, Infancy, Neonatal patient with gingival fibromatosis, chondrocalcinosis, subcutaneous nodule, abnormality of the face, abnormal thorax morphology"
+  },
+  {
+    "disease_id": "RMD1184",
+    "ground_truth": "15q overgrowth syndrome",
+    "query": "Antenatal, Infancy, Neonatal patient with horseshoe kidney, hydronephrosis, high palate, retrognathia, abnormality of the outer ear"
+  },
+  {
+    "disease_id": "RMD0395",
+    "ground_truth": "Cranio-osteoarthropathy",
+    "query": "Childhood patient with large fontanelles, mottled pigmentation, arthritis, joint swelling, abnormal skull morphology, abnormality of the knee"
+  },
+  {
+    "disease_id": "RMD1445",
+    "ground_truth": "Neuromyelitis optica spectrum disorder",
+    "query": "Adolescent, Adult, Childhood, Elderly patient with visual loss, neuronal loss in central nervous system, somatic sensory dysfunction, paraplegia, functional abnormality of the bladder"
+  },
+  {
+    "disease_id": "RMD0143",
+    "ground_truth": "Hypogonadism-mitral valve prolapse-intellectual disability syndrome",
+    "query": "Infancy patient with hypogonadism, high palate, short neck, gynecomastia, abnormal testis morphology, decreased fertility"
+  },
+  {
+    "disease_id": "RMD0094",
+    "ground_truth": "Bruck syndrome",
+    "query": "Antenatal, Childhood, Infancy, Neonatal patient with triangular face, osteoporosis, pterygium, joint stiffness, hypophosphatasia, osteopenia"
+  },
+  {
+    "disease_id": "RMD1356",
+    "ground_truth": "Malaria",
+    "query": "Patient with acute kidney injury, fever, nausea and vomiting, headache, anemia, morphological central nervous system abnormality"
+  },
+  {
+    "disease_id": "RMD0468",
+    "ground_truth": "Facial dysmorphism-anorexia-cachexia-eye and skin anomalies syndrome",
+    "query": "No data available patient with anteverted nares, ptosis, pectus excavatum, melanocytic nevus, abnormality of the thyroid gland, abnormality of the voice"
+  },
+  {
+    "disease_id": "RMD0594",
+    "ground_truth": "FATCO syndrome",
+    "query": "Antenatal, Neonatal patient with split hand, premature birth, respiratory insufficiency, absent hand, abnormality of the cardiovascular system, abnormal fibula morphology"
+  },
+  {
+    "disease_id": "RMD0164",
+    "ground_truth": "Trichorhinophalangeal syndrome type 2",
+    "query": "Childhood, Infancy, Neonatal patient with joint hypermobility, thin upper lip vermilion, long philtrum, protruding ear, normal karyotype, no genetic abnormalities detected"
+  },
+  {
+    "disease_id": "RMD0208",
+    "ground_truth": "Whipple disease",
+    "query": "No data available patient with uveitis, depression, myoclonus, arthritis, macrocytic anemia, elevated lactate dehydrogenase (ldh)"
+  },
+  {
+    "disease_id": "RMD0930",
+    "ground_truth": "Congenital muscular dystrophy due to LMNA mutation",
+    "query": "Infancy, Neonatal patient with hypotonia, global developmental delay, gait disturbance, flexion contracture, muscle histopathology: nemaline bodies, elevated creatine kinase"
+  },
+  {
+    "disease_id": "RMD1303",
+    "ground_truth": "Walker-Warburg syndrome",
+    "query": "Antenatal, Infancy, Neonatal patient with areflexia, pachygyria, cerebellar hypoplasia, muscle weakness, abnormality of neuronal migration"
+  },
+  {
+    "disease_id": "RMD0749",
+    "ground_truth": "Felty syndrome",
+    "query": "Adult patient with sinusitis, chronic otitis media, arthritis, limitation of joint mobility, abnormal joint morphology, decreased total neutrophil count"
+  },
+  {
+    "disease_id": "RMD0335",
+    "ground_truth": "Ataxia-photosensitivity-short stature syndrome",
+    "query": "Childhood, Infancy patient with high palate, dry skin, cutaneous photosensitivity, urticaria, abnormality of movement"
+  },
+  {
+    "disease_id": "RMD0760",
+    "ground_truth": "Muenke syndrome",
+    "query": "Antenatal, Neonatal patient with brachycephaly, malar flattening, hypertelorism, sensorineural hearing impairment, increased intracranial pressure"
+  },
+  {
+    "disease_id": "RMD0729",
+    "ground_truth": "Kallmann syndrome",
+    "query": "Adolescent, Childhood patient with hypogonadotropic hypogonadism, micropenis, anosmia, delayed puberty, decreased fertility, hypothalamic gonadotropin-releasing hormone (gnrh) deficiency"
+  },
+  {
+    "disease_id": "RMD0431",
+    "ground_truth": "Thoracomelic dysplasia",
+    "query": "Infancy patient with joint hypermobility, bell-shaped thorax, low posterior hairline, genu valgum, abnormal metaphysis morphology, abnormality of pelvic girdle bone morphology"
+  },
+  {
+    "disease_id": "RMD1374",
+    "ground_truth": "Amyotrophic lateral sclerosis",
+    "query": "Adult patient with neurodegeneration, generalized muscle weakness, motor neuron atrophy, xerostomia, creatinine kinase elevation, low muscle enzyme (skeletal muscle atrophy)"
+  },
+  {
+    "disease_id": "RMD0548",
+    "ground_truth": "Hypospadias-intellectual disability, Goldblatt type syndrome",
+    "query": "Infancy, Neonatal patient with posteriorly rotated ears, hypospadias, microcephaly, intellectual disability, abnormal palate morphology"
+  },
+  {
+    "disease_id": "RMD1440",
+    "ground_truth": "Thyrocerebrorenal syndrome",
+    "query": "Childhood patient with renal insufficiency, nephritis, sensorineural hearing impairment, seizure, thrombocytopenia, abnormality of the musculature of the limbs"
+  },
+  {
+    "disease_id": "RMD1402",
+    "ground_truth": "Autoimmune hypoparathyroidism",
+    "query": "Adolescent, Adult, Childhood patient with hyperphosphatemia, cataract, hypercalciuria, paresthesia, hypocalcemia, decreased circulating parathyroid hormone level"
+  },
+  {
+    "disease_id": "RMD1329",
+    "ground_truth": "Obesity due to leptin receptor gene deficiency",
+    "query": "Childhood, Infancy patient with gynecomastia, primary amenorrhea, hypergonadotropic hypogonadism, hyperinsulinemia, decreased t cell activation, decreased serum estradiol"
+  },
+  {
+    "disease_id": "RMD0147",
+    "ground_truth": "Hartnup disease",
+    "query": "Patient with emotional lability, hallucinations, anxiety, cutaneous photosensitivity, eeg abnormality, neutral hyperaminoaciduria"
+  },
+  {
+    "disease_id": "RMD1249",
+    "ground_truth": "N syndrome",
+    "query": "Infancy, Neonatal patient with cryptorchidism, hypospadias, megalocornea, visual impairment, abnormal eyelid morphology"
+  },
+  {
+    "disease_id": "RMD1302",
+    "ground_truth": "Medulloblastoma",
+    "query": "Patient with delayed cranial suture closure, ataxia, lethargy, dysmetria, abnormal cranial nerve morphology, increased intracranial pressure"
+  },
+  {
+    "disease_id": "RMD0352",
+    "ground_truth": "X-linked mandibulofacial dysostosis",
+    "query": "Neonatal patient with posteriorly rotated ears, high palate, microcephaly, triangular face, * hypercholesterolemia, * normal karyotype (46,xy or 46,xx)"
+  },
+  {
+    "disease_id": "RMD1095",
+    "ground_truth": "Hypohidrotic ectodermal dysplasia",
+    "query": "Infancy, Neonatal patient with nephrotic syndrome, xerostomia, sinusitis, hypoplasia of the maxilla, abnormality of the dentition"
+  },
+  {
+    "disease_id": "RMD1496",
+    "ground_truth": "Thymic neuroendocrine tumor",
+    "query": "Adult, Elderly patient with mediastinal lymphadenopathy, weight loss, chronic noninfectious lymphadenopathy, prominent veins on trunk, abnormality of the mediastinum, increased circulating cortisol level"
+  },
+  {
+    "disease_id": "RMD0336",
+    "ground_truth": "Atkin-Flaitz syndrome",
+    "query": "Neonatal patient with macroorchidism, everted lower lip vermilion, macrocephaly, coarse facial features, abnormality of the dentition"
+  },
+  {
+    "disease_id": "RMD0948",
+    "ground_truth": "Haddad syndrome",
+    "query": "Infancy, Neonatal patient with strabismus, failure to thrive, small for gestational age, aganglionic megacolon, abnormal autonomic nervous system physiology"
+  },
+  {
+    "disease_id": "RMD0779",
+    "ground_truth": "Congenital muscular dystrophy, Fukuyama type",
+    "query": "Infancy patient with hydrocephalus, brachycephaly, mask-like facies, myopia, elevated ck, elevated sdh"
+  },
+  {
+    "disease_id": "RMD0554",
+    "ground_truth": "Primary hypomagnesemia with hypercalciuria and nephrocalcinosis with severe ocular involvement",
+    "query": "Childhood patient with inguinal hernia, nephropathy, myopia, chorioretinal coloboma, abnormality of retinal pigmentation, abnormality of calcium-phosphate metabolism"
+  },
+  {
+    "disease_id": "RMD1312",
+    "ground_truth": "Occipital horn syndrome",
+    "query": "Childhood, Infancy, Neonatal patient with large fontanelles, delayed cranial suture closure, hyperextensible skin, intellectual disability, abnormality of the face, abnormal skull morphology"
+  },
+  {
+    "disease_id": "RMD1412",
+    "ground_truth": "Neuroendocrine tumor of anal canal",
+    "query": "Adult, Elderly patient with weight loss, constipation, abdominal pain, chronic noninfectious lymphadenopathy, elevated circulating hepatic transaminase concentration"
+  },
+  {
+    "disease_id": "RMD1142",
+    "ground_truth": "Carney complex",
+    "query": "Infancy, Neonatal patient with pigmented micronodular adrenocortical disease, ovarian cyst, euthyroid multinodular goiter, multiple lentigines, elevated circulating growth hormone concentration, increased circulating prolactin concentration"
+  },
+  {
+    "disease_id": "RMD0451",
+    "ground_truth": "Prolidase deficiency",
+    "query": "Adolescent, Adult, Childhood, Infancy, Neonatal patient with low anterior hairline, hypertelorism, micrognathia, hearing impairment, abnormality of the middle ear"
+  },
+  {
+    "disease_id": "RMD1405",
+    "ground_truth": "Pseudohypoparathyroidism type 1C",
+    "query": "Childhood, Infancy, Neonatal patient with hyperphosphatemia, low urinary cyclic amp response to pth administration, pituitary resistance to thyroid hormone, full cheeks, hypocalcemia, elevated circulating parathyroid hormone level"
+  },
+  {
+    "disease_id": "RMD0666",
+    "ground_truth": "Delayed speech-facial asymmetry-strabismus-ear lobe creases syndrome",
+    "query": "Childhood patient with high palate, hypertelorism, facial asymmetry, long philtrum, short stature, hypocalcemia"
+  },
+  {
+    "disease_id": "RMD0115",
+    "ground_truth": "Aarskog-Scott syndrome",
+    "query": "Childhood patient with shawl scrotum, everted lower lip vermilion, hypertelorism, broad palm, * short stature, * delayed bone age"
+  },
+  {
+    "disease_id": "RMD0471",
+    "ground_truth": "Faciocardiorenal syndrome",
+    "query": "Neonatal patient with horseshoe kidney, cleft palate, hypertelorism, smooth philtrum, hypertension, elevated renin levels"
+  },
+  {
+    "disease_id": "RMD0648",
+    "ground_truth": "Acromelic frontonasal dysplasia",
+    "query": "Antenatal, Neonatal patient with large fontanelles, brachycephaly, hypertelorism, broad nasal tip, elevated alpha-fetoprotein, shortened long bone metaphysis"
+  },
+  {
+    "disease_id": "RMD0823",
+    "ground_truth": "Visceral neuropathy-brain anomalies-facial dysmorphism-developmental delay syndrome",
+    "query": "Antenatal, Neonatal patient with multicystic kidney dysplasia, retrognathia, broad forehead, long philtrum, elevated creatinine, low platelets"
+  }
+]

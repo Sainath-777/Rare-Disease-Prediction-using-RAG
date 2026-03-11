@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RareDx — Rare Disease Diagnostic System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+  <link rel="stylesheet" href="D:/AntiGravity/rare_disease_rag/static/styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Background grid -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <div class="shell">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">RareDx</span>
+          <span class="logo-sub">Diagnostic Intelligence System</span>
+        </div>
+      </div>
+      <div class="header-stats">
+        <div class="stat">
+          <span class="stat-num">1,500</span>
+          <span class="stat-label">Diseases</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">93%</span>
+          <span class="stat-label">Top-1 Accuracy</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">95%</span>
+          <span class="stat-label">Top-3 Accuracy</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+
+      <!-- Input panel -->
+      <section class="input-panel">
+        <div class="panel-label">PATIENT SYMPTOM INPUT</div>
+        <h1 class="panel-title">Describe the clinical presentation</h1>
+        <p class="panel-desc">
+          Enter patient symptoms, lab findings, age of onset, and any relevant
+          clinical observations. The system retrieves from 1,500 indexed rare diseases
+          and returns ranked differential diagnoses.
+        </p>
+
+        <div class="input-wrap">
+          <textarea
+            id="symptomInput"
+            class="symptom-input"
+            placeholder="e.g. Infant with poor feeding, vomiting, lethargy and hyperammonemia..."
+            rows="5"
+          ></textarea>
+          <div class="input-footer">
+            <span class="char-count" id="charCount">0 characters</span>
+            <div class="example-chips">
+              <span class="chip-label">Try:</span>
+              <button class="chip" onclick="fillExample(0)">Urea cycle</button>
+              <button class="chip" onclick="fillExample(1)">Lysosomal storage</button>
+              <button class="chip" onclick="fillExample(2)">Mitochondrial</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="run-btn" id="runBtn" onclick="runDiagnosis()">
+          <span class="btn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+          </span>
+          <span class="btn-text">Run Diagnostic Analysis</span>
+          <span class="btn-arrow">→</span>
+        </button>
+
+        <!-- Pipeline architecture hint -->
+        <div class="pipeline-flow">
+          <div class="pf-step">Symptom Input</div>
+          <div class="pf-arrow">→</div>
+          <div class="pf-step">FAISS Search</div>
+          <div class="pf-arrow">→</div>
+          <div class="pf-step">Symptom Scoring</div>
+          <div class="pf-arrow">→</div>
+          <div class="pf-step">Groq LLM Ranking</div>
+          <div class="pf-arrow">→</div>
+          <div class="pf-step highlight">Top 3 Diagnoses</div>
+        </div>
+      </section>
+
+      <!-- Results panel -->
+      <section class="results-panel" id="resultsPanel">
+
+        <!-- Idle state -->
+        <div class="idle-state" id="idleState">
+          <div class="idle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/>
+            </svg>
+          </div>
+          <p class="idle-text">Results will appear here</p>
+          <p class="idle-sub">Enter patient symptoms and run analysis</p>
+        </div>
+
+        <!-- Loading state -->
+        <div class="loading-state" id="loadingState" style="display:none">
+          <div class="loader-wrap">
+            <div class="loader-ring"></div>
+            <div class="loader-ring ring2"></div>
+            <div class="loader-ring ring3"></div>
+          </div>
+          <p class="loading-text">Searching 1,500 diseases...</p>
+          <div class="loading-steps">
+            <div class="ls" id="ls1">⬡ Embedding query vector</div>
+            <div class="ls" id="ls2">⬡ FAISS similarity search</div>
+            <div class="ls" id="ls3">⬡ Symptom overlap scoring</div>
+            <div class="ls" id="ls4">⬡ Groq LLM clinical ranking</div>
+          </div>
+        </div>
+
+        <!-- Results state -->
+        <div class="results-state" id="resultsState" style="display:none">
+          <div class="results-header">
+            <div class="results-label">DIFFERENTIAL DIAGNOSIS</div>
+            <div class="results-meta" id="resultsMeta"></div>
+          </div>
+          <div class="disease-cards" id="diseaseCards"></div>
+          <div class="disclaimer">
+            ⚠ This system is a research prototype for academic purposes only.
+            Not intended for clinical use. Always consult qualified medical professionals.
+          </div>
+        </div>
+
+        <!-- Error state -->
+        <div class="error-state" id="errorState" style="display:none">
+          <div class="error-icon">✕</div>
+          <p class="error-text" id="errorText">An error occurred.</p>
+          <button class="retry-btn" onclick="resetUI()">Try again</button>
+        </div>
+
+      </section>
+    </main>
+
+  </div>
+
+  <script>
+    const examples = [
+      "Infant with poor feeding, vomiting, lethargy and hyperammonemia. Low citrulline, elevated orotic acid.",
+      "Child with hepatosplenomegaly, developmental regression, cherry red macula on fundoscopy. Progressive neurological decline.",
+      "Patient with stroke-like episodes, seizures, lactic acidosis, and maternal inheritance pattern. Ragged red fibers on biopsy."
+    ];
+
+    // Character counter
+    document.getElementById("symptomInput").addEventListener("input", function () {
+      document.getElementById("charCount").textContent = this.value.length + " characters";
+    });
+
+    function fillExample(i) {
+      const ta = document.getElementById("symptomInput");
+      ta.value = examples[i];
+      ta.dispatchEvent(new Event("input"));
+      ta.focus();
+    }
+
+    function resetUI() {
+      document.getElementById("idleState").style.display    = "flex";
+      document.getElementById("loadingState").style.display = "none";
+      document.getElementById("resultsState").style.display = "none";
+      document.getElementById("errorState").style.display   = "none";
+      ["ls1","ls2","ls3","ls4"].forEach(id => {
+        document.getElementById(id).classList.remove("ls-done");
+      });
+    }
+
+    function animateLoadingSteps() {
+      const steps = ["ls1","ls2","ls3","ls4"];
+      const delays = [400, 900, 1400, 1900];
+      steps.forEach((id, i) => {
+        setTimeout(() => {
+          document.getElementById(id).classList.add("ls-done");
+        }, delays[i]);
+      });
+    }
+
+    function getConfidenceClass(score) {
+      if (score >= 60) return "conf-high";
+      if (score >= 35) return "conf-mid";
+      return "conf-low";
+    }
+
+    function getRankLabel(i) {
+      const labels = ["Primary Diagnosis", "Secondary Diagnosis", "Tertiary Diagnosis"];
+      return labels[i] || `Rank ${i + 1}`;
+    }
+
+    async function runDiagnosis() {
+      const symptoms = document.getElementById("symptomInput").value.trim();
+      if (!symptoms) {
+        document.getElementById("symptomInput").classList.add("input-error");
+        setTimeout(() => document.getElementById("symptomInput").classList.remove("input-error"), 1000);
+        return;
+      }
+
+      // Switch to loading state
+      document.getElementById("idleState").style.display    = "none";
+      document.getElementById("resultsState").style.display = "none";
+      document.getElementById("errorState").style.display   = "none";
+      document.getElementById("loadingState").style.display = "flex";
+      document.getElementById("runBtn").disabled = true;
+      animateLoadingSteps();
+
+      try {
+        const response = await fetch("/predict", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ symptoms })
+        });
+
+        const data = await response.json();
+
+        if (data.error) throw new Error(data.error);
+
+        // Build result cards
+        const cards = document.getElementById("diseaseCards");
+        cards.innerHTML = "";
+
+        data.results.forEach((r, i) => {
+          const confClass = getConfidenceClass(r.confidence);
+          cards.innerHTML += `
+            <div class="disease-card card-${i}" style="animation-delay:${i * 0.12}s">
+              <div class="card-rank-badge">
+                <span class="rank-num">${i + 1}</span>
+                <span class="rank-label">${getRankLabel(i)}</span>
+              </div>
+              <div class="card-body">
+                <h3 class="disease-name">${r.name}</h3>
+                <div class="confidence-row">
+                  <div class="conf-bar-wrap">
+                    <div class="conf-bar ${confClass}" style="width:${r.confidence}%"></div>
+                  </div>
+                  <span class="conf-value ${confClass}">${r.confidence.toFixed(1)}%</span>
+                </div>
+                <p class="reasoning-text">${r.reasoning}</p>
+                <div class="score-chips">
+                  <div class="score-chip">
+                    <span class="sc-label">LLM Confidence</span>
+                    <span class="sc-val">${r.llm_confidence}%</span>
+                  </div>
+                  <div class="score-chip">
+                    <span class="sc-label">Vector Similarity</span>
+                    <span class="sc-val">${r.retrieval_similarity}%</span>
+                  </div>
+                  <div class="score-chip">
+                    <span class="sc-label">Hybrid Score</span>
+                    <span class="sc-val">${r.confidence.toFixed(1)}%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+
+        document.getElementById("resultsMeta").textContent =
+          `${data.results.length} candidates ranked · ${new Date().toLocaleTimeString()}`;
+
+        document.getElementById("loadingState").style.display = "none";
+        document.getElementById("resultsState").style.display = "flex";
+
+      } catch (err) {
+        document.getElementById("loadingState").style.display = "none";
+        document.getElementById("errorState").style.display   = "flex";
+        document.getElementById("errorText").textContent = err.message || "Unexpected error occurred.";
+      } finally {
+        document.getElementById("runBtn").disabled = false;
+      }
+    }
+
+    // Enter key to submit
+    document.getElementById("symptomInput").addEventListener("keydown", function(e) {
+      if (e.key === "Enter" && e.ctrlKey) runDiagnosis();
+    });
+  </script>
+
+</body>
+</html>
